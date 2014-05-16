@@ -10,9 +10,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     </head>
     <body>
         <h1>Pagina de login</h1>
+        
+        
         
                 <form action="login" method="post" >
             <center><table bgcolor="#cccccc" border="0" cellpadding="6"
