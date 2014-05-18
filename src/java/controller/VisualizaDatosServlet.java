@@ -23,10 +23,7 @@ import javax.servlet.http.HttpSession;
 import managers.DatabaseManager;
 import managers.LoggerManager;
 
-/**
- *
- * @author FO-Mañana
- */
+
 public class VisualizaDatosServlet extends HttpServlet {
 
     /**
