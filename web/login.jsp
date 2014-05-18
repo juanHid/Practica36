@@ -11,40 +11,38 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Pagina de login</h1>
-        
-        
-        
-                <form action="login" method="post" >
-            <center><table bgcolor="#cccccc" border="0" cellpadding="6"
-                           cellspacing="0" width="400"><br/>
-                    
-                    
-                 <tr>
-                        <td align="right" valign="top"><b>Usuario: </b></td>
-                        <td><input type="text" size="25" name="usuario"> </td>
-                    </tr>
-                 
-                
-                    <tr>
-                        <td align="right" valign="top"><b>Password: </b></td>
-                        <td><input type="password" size="25" name="password"> </td>
-                    </tr>
-                    <tr>
-                        <td align="right" valign="top"><b></b> </td>
-                        <td align="center">&nbsp; 
-                            <input type="submit"  value=" Enviar ">
-                            <input type="reset" value="Borrar" > 
-                        </td>
-                    </tr>
-                </table>
-            </center>
-        </form>
-        
-        
-        
+
+        <div class="jumbotron">
+            <h1>Login</h1>
+            <div class="container">
+
+
+
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-4">
+                <form class="form-inline"  action="login" method="post">
+                    <div class="form-group">
+                        <label class="sr-only" for="usuario">Usuario: </label>
+                        <input name="usuario" type="text" class="form-control" id="usuario" placeholder="Enter user" size="10">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="Userpassword">Password</label>
+                        <input name="password" type="password" class="form-control" id="Userpassword" placeholder="Password" size="10">
+                    </div>
+
+                    <input type="submit" class="btn btn-primary" value="Entrar">
+                    <input type="reset" class="btn btn-danger" value="Borrar">
+                </form> 
+
+            </div>
+        </div>  
     </body>
 </html>
