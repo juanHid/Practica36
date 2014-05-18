@@ -8,9 +8,25 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>View</h1>
+
+ 
+
+
+  <div class="panel-body">
+         <div class="page-header">
+            <h1>  Lista de vehiculos<small>   agrupados por categoria</small></h1>
+            <a href="logout"  class="btn btn-primary " role="button">Logout</a>
+        </div>
+  </div>
+
+ <div class="panel-body">
+       
+  
+
+
         <c:choose> 
             <c:when test="${categoriaList == null}">
                 <p>FATAL ERROR</p>
@@ -20,16 +36,25 @@
             </c:when>
             <c:otherwise>
                 <c:forEach var="categoria" items="${categoriaList}"  >
-                    <h2>${categoria.tipo}, ${categoria.descripcion}</h2>                   
+                    <h2>${categoria.tipo}</h2> 
+                    <h3>${categoria.descripcion}</h3>
                     <c:forEach var="vehiculo" items="${categoria.listaVehiculos}" >
-                        <p>
-                           Matricula: ${vehiculo.matricula}<br/>
-                           Color: ${vehiculo.color}<br/>
-                           Fabricante: ${vehiculo.fabricante}<br/>
-                           Velocidad máxima: ${vehiculo.velocidadMax} km/h<br/>
-                           Motor de ${vehiculo.motor.cilindros} cilindros y ${vehiculo.motor.potencia} cv. <br/>                     
-                        </p>
-                         <hr>
+
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-1">   
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"> Matricula: ${vehiculo.matricula}</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        Color: ${vehiculo.color}<br/>
+                                        Fabricante: ${vehiculo.fabricante}<br/>
+                                        Velocidad máxima: ${vehiculo.velocidadMax} km/h<br/>
+                                        Motor de ${vehiculo.motor.cilindros} cilindros y ${vehiculo.motor.potencia} cv.     
+                                    </div>
+                                </div>
+                            </div></div>
+
                     </c:forEach>
                 </c:forEach> 
             </c:otherwise>
@@ -37,7 +62,7 @@
 
 
 
-
-        <p></p>
+</div>
+      
     </body>
 </html>
