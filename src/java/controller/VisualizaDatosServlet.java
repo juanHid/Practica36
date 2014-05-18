@@ -47,12 +47,20 @@ public class VisualizaDatosServlet extends HttpServlet {
         
         //1.Declarar una lista de categorias
         ArrayList<Categoria> categoriaList;
-
+        
+       //Para probar salida que da con categoriaList = null o vacia
+       // ArrayList<Categoria> categoriaList2=null;
+       //ArrayList<Categoria> categoriaList2=new ArrayList<Categoria>();
+        
         //2. llamar una funcion que devuelve una lista de categorias
         // con los vehiculos de cada categoria
         categoriaList = getCategoriasYVehiculos();
         
         //3 Almaceno la lista de categorias en la sesion para pasarla al view.jsp 
+        
+      //Para probar salida que da con categoriaList = null o vacia  
+     // session.setAttribute("categoriaList", categoriaList2);
+        
         session.setAttribute("categoriaList", categoriaList);
         request.setAttribute("view", "view.jsp");
 
@@ -146,22 +154,6 @@ public class VisualizaDatosServlet extends HttpServlet {
            return categoriaList; 
         }
         
-        
-    
-        //dos querys una para categoria que se hace aqui 
-        // y otra para obtener los vehiculos de esa categoria que
-        //se hace en el metodo de la clase categoria
-        //
-
-        /*
-         SELECT * FROM categoria;
-        
-         categoriaId
-                
-         SELECT * FROM vehiculo, motor, vehiculo_tipo WHERE vehiculo.categoria_id=categoriaId AND
-         vehiculo.motor_id=motor.id AND vehiculo.vehiculo_tipo_id=vehiculo_tipo.id
-        
-         */
         
     }
 
