@@ -36,8 +36,8 @@
             </c:when>
             <c:otherwise>
                 <c:forEach var="categoria" items="${categoriaList}"  >
-                    <h2>${categoria.tipo}</h2> 
-                    <h3>${categoria.descripcion}</h3>
+                    <h3>${categoria.tipo}<small>  ${categoria.descripcion}</small></h3> 
+                    
                     <c:forEach var="vehiculo" items="${categoria.listaVehiculos}" >
 
                         <div class="row">
