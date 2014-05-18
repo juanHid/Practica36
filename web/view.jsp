@@ -41,7 +41,7 @@
                     <c:forEach var="vehiculo" items="${categoria.listaVehiculos}" >
 
                         <div class="row">
-                            <div class="col-md-4 col-md-offset-1">   
+                            <div class="col-md-4">   
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h3 class="panel-title"> Matricula: ${vehiculo.matricula}</h3>
