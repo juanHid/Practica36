@@ -1,8 +1,3 @@
-<%-- 
-    Document   : view
-    Created on : 08-may-2014, 11:53:59
-    Author     : FO-Mañana
---%>
 <%--
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 --%>
