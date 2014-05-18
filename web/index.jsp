@@ -14,10 +14,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Practica Clases</h1>
         
+  <div class="panel-body">
+         <div class="page-header">
+            <h1>  Registro de vehiculos<small>  </small></h1>
+            <a href="logout"  class="btn btn-primary " role="button">Logout</a>
+        </div>
+  </div>       
   
      
         
