@@ -47,10 +47,17 @@
                                         <h3 class="panel-title"> Matricula: ${vehiculo.matricula}</h3>
                                     </div>
                                     <div class="panel-body">
+                                        <c:if test="${vehiculo.nrDeRuedas==2}">
+                                           Vehiculo: Moto<br/> 
+                                        </c:if>
+                                         <c:if test="${vehiculo.nrDeRuedas==4}">
+                                             Vehiculo: Coche<br/> 
+                                         </c:if>
                                         Color: ${vehiculo.color}<br/>
                                         Fabricante: ${vehiculo.fabricante}<br/>
                                         Velocidad máxima: ${vehiculo.velocidadMax} km/h<br/>
                                         Motor de ${vehiculo.motor.cilindros} cilindros y ${vehiculo.motor.potencia} cv.     
+                                   
                                     </div>
                                 </div>
                             </div></div>
